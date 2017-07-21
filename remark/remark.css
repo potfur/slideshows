@@ -1,48 +1,28 @@
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url('http://fonts.googleapis.com/css?family=Ubuntu+Mono|Arvo|Droid Serif|Source+Sans+Pro:300&subset=latin,latin-ext');
 
-body {
-    font-family: 'Droid Serif';
-}
+body { font-family: 'Droid Serif', sans-serif; }
 
-h1, h2, h3 {
-    font-family: 'Yanone Kaffeesatz';
-    font-weight: 400;
-    margin-bottom: 0;
-}
+h1, h2, h3 , h4 { font: larger/0.8em 'Arvo', sans-serif; margin: 0.5em auto; padding: 0; }
+h1 { font-size: 4em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; font-weight: normal; }
 
-.remark-slide-content h1 {
-    font-size: 3em;
-}
+p { line-height: 1.5em }
 
-.remark-slide-content h2 {
-    font-size: 2em;
-}
+ol, ul { display: inline-block; text-align: left; }
+ol li, ul li { margin: 0.5em 0; }
 
-.remark-slide-content h3 {
-    font-size: 1.6em;
-}
+pre { display: inline-block; font-family: 'Ubuntu Mono', monospace; text-align: left; }
 
-.remark-slide-content ol, .remark-slide-content ul {
-    margin: 1em auto;
-    width: 50%;
-    text-align: left;
-}
+code { border-radius: 0.5em; }
 
-.remark-slide-content code {
-    display: inline-block;
-    margin: 1em auto;
-    text-align: left;
-}
-
-.inverse {
-    background: #272822;
-    color: #777872;
-    text-shadow: 0 0 20px #333;
-}
-
-.inverse h1, .inverse h2 {
-    color: #f3f3f3;
-    line-height: 0.8em;
-}
+.dark { background: #222; color: #eee; text-shadow: 0 0 20px #111; }
+.dark h1 { color: #e15; }
+.dark h2, .dark h3, .dark h4 { color: #9b1; }
+.dark strong { color: #e15; }
+.dark em { color: #06a; }
+.dark blockquote { position: relative; display: inline-block; margin: 1em; padding: 0; font: italic 1.25em/1em 'Droid Serif', serif; color: #06a; background-color: #222; }
+.dark blockquote:before, .dark blockquote:after { content: '”'; position: absolute; color: #e15; font: 4em/0.5em 'Droid Serif', serif; }
+.dark blockquote:before { bottom: -0.5em; left: 0; }
+.dark blockquote:after { top: 0; right: 0; }
