@@ -17,53 +17,6 @@ _`*`module_ as in: package, module, file, class
  
 ---
 
-```python
-order = {
-	...
-	'price_gross': 100,
-	'price_net': 120,
-	'price_currency': 'EUR',
-	...
-}
-
-def set_price(order: dict, gross: int, net: int, curr: str) -> None:
-	order['price_gross'] = gross
-    order['price_net'] = net
-    order['price_currency'] = curr
-
-def set_shipping_address(...) -> None:
-	...
-
-```
-
----
-
-
-```python
-class Order
-	def set_price(self, gross: int, net: int, curr: str) -> None:
-        self.__price_gross = gross
-        self.__price_net = net
-        self.__price_currency = curr
-        
-	def set_shipping_address(self, ...) -> None:
-		...
-```
-
----
-
-```python
-class Order
-	def set_price(self, price: Price) -> None:
-        self.__price = price
-        
-	def set_shipping_address(self, address: Address) -> None:
-		self.__shipping_address = address
-```
-
----
-
-
 # Coupling
 
 > [Coupling][coupling] is the degree of interdependence between software modules; 
