@@ -1,6 +1,6 @@
 
 layout: true
-class: center, middle, inverse
+class: center, middle, dark
 
 ---
 
@@ -8,15 +8,25 @@ class: center, middle, inverse
 
 ---
 
-# Cohesion
+## Cohesion
 
 > TODO 
  
 ---
 
-# Coupling
+## Coupling
 
-> Coupling is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are.
+> Coupling is the degree of interdependence between software modules; 
+> a measure of how closely connected two routines or modules are.
+
+--
+
+### Tight _strong, high_ : **Is bad**
+
+--
+
+### Loose _weak, low_ : **Is good!**
+
 
 ???
 - Defines how unit is coupled with others implementation,
@@ -24,17 +34,8 @@ class: center, middle, inverse
 
 ---
 
-## Tight _strong, high_
-Is bad.
-
---
-
-## Loose _weak, low_
-Is good!
-
----
-
-### Properties & attributes
+### Tight coupling is when bound to: 
+### _properties & attributes_
 
 ```python
 def get_by_email(email: str) -> Union[None, Principal]:
@@ -48,7 +49,8 @@ def get_by_email(email: str) -> Union[None, Principal]:
 
 ---
 
-### Implementation
+### Tight coupling is when bound to:
+### _implementation_
 
 ```python
 class NotificationRepository:
@@ -64,12 +66,13 @@ class CreateNotificationHandler:
 
 ---
 
-### Structure
+### Tight coupling is when bound to:
+### _structure_
 
 ```python
-class SetDefaultLocation(object):
+class DefaultLocation:
     @classmethod
-    def from_dict(cls, data: Dict):
+    def from_dict(cls, data: Dict) -> DefaultLocation:
         return cls(**data)
 ```
 
@@ -78,7 +81,8 @@ class SetDefaultLocation(object):
 
 ---
 
-## Abstractions
+### Loose coupling is when there is:
+### _abstraction_
 
 - contracts (ie. abstract classes, interfaces)
 - data transfer objects
@@ -86,13 +90,11 @@ class SetDefaultLocation(object):
 
 ---
 
-# Inversion of Control
+## Inversion of Control
 
 ---
 
-## What is a dependency
-
---
+### What is a dependency?
 
 ```python
 class Mailer:
@@ -125,24 +127,24 @@ class Mailer:
 
 ---
 
-## Injection
+### Injection
 
 > TODO - show how Mailer gets its external dependencies
 
 ---
 
-## Decorators
+### Decorators
 
 > TODO - circuit breaker is a PROPER decorator
 
 ---
 
-## Events
+### Events
 
 > TODO - no idea how to put this into context
 
 ---
 
-## Aspect oriented programming
+### Aspect oriented programming
 
 > TODO - no idea how to put this into context
