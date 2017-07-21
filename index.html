@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="remark/remark.css">
+	<link rel="stylesheet" href="remark/mermaid.css">
+    <script src="remark/remark-latest.min.js"></script>
+    <script src="remark/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <title>Remark</title>
+</head>
+<body>
+<pre id="source">
+
+layout: true
+class: center, middle, inverse
+
+---
+
+# Remarkjs.com
+
+Markdown + code highlighting
+
+As web-presentation
+
+---
+
+# Mermaid graphs
+
+---
+
+.mermaid[graph LR
+    A-->B
+    B-->C
+    C-->A
+    D-->C]
+
+---
+
+# The End
+
+</pre>
+<script>
+    var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark',
+        highlightLines: true,
+    });
+</script>
+</body>
+</html>
