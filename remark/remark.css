@@ -22,7 +22,9 @@ code { border-radius: 0.5em; }
 .dark h2, .dark h3, .dark h4 { color: #9b1; }
 .dark strong { color: #e15; }
 .dark em { color: #06a; }
+.dark code { color: #f27;}
+.dark a { display: inline-block; text-decoration: none; color: #06a; line-height: 1em; border-bottom: 0.1em solid #06a; }
 .dark blockquote { position: relative; display: inline-block; margin: 1em; padding: 0; font: italic 1.25em/1em 'Droid Serif', serif; color: #06a; background-color: #222; }
-.dark blockquote:before, .dark blockquote:after { content: '”'; position: absolute; color: #e15; font: 4em/0.5em 'Droid Serif', serif; }
+.dark blockquote:before, .dark blockquote:after { content: '”'; position: absolute; color: #9b1; font: 4em/0.5em 'Droid Serif', serif; }
 .dark blockquote:before { bottom: -0.5em; left: 0; }
 .dark blockquote:after { top: 0; right: 0; }
