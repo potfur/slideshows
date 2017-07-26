@@ -13,9 +13,11 @@ p { line-height: 1.5em }
 ol, ul { display: inline-block; text-align: left; }
 ol li, ul li { margin: 0.5em 0; }
 
-pre { display: inline-block; font-family: 'Ubuntu Mono', monospace; text-align: left; }
+pre { display: inline-block; font: medium/1.75em 'Ubuntu Mono', monospace; text-align: left; }
 
 code { border-radius: 0.5em; }
+
+.remark-slide-content { padding: 1em !important; }
 
 .dark { background: #222; color: #eee; text-shadow: 0 0 20px #111; }
 .dark h1 { color: #e15; }
