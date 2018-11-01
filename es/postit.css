@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+/* TODO - add postit background */
+
+ul { margin: 0; }
+ul li { list-style: none; font-size: 1.25em; min-width: 10em;}
+
+h3 code { margin: 0 0.5em; }
+
+.postit { display: inline-block; width: 1em; height: 1em; border: 1px solid transparent; font: 1em/1em 'Patrick Hand', cursive, sans-serif; text-shadow: none; box-shadow: rgba(0, 0, 0, 0.2) 0.1em 0.1em; color: #222; }
+.big { width: 4em; height: 4em; font-size: 3em; }
+
+.es.event { background: orange; }
+.es.question { background: deeppink; }
+.es.rule { background: red; }
+.es.policy { background: purple; }
+.es.command { background: dodgerblue; }
+.es.actor { background: gold; }
+
+.bdd.rule { background: dodgerblue; }
+.bdd.case { background: limegreen; }
