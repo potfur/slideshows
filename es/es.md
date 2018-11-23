@@ -21,32 +21,26 @@ Something _important_ happened
 
 ---
 
-## Question
+## Question / Error
 
 **Marker** for `¯\_(ツ)_/¯`
 
-.postit.es.question.big[What happens here?] 
+.postit.es.question.big[But how?] 
+.postit.es.question.big[Whaaaa!] 
 
 ---
 
-## Rule
+## Rule / Policy
 
-Some constraint or partition
+Something that is a business related constraint, reaction, trigger etc. 
 
 .postit.es.rule.big[Price >= 40 UAH] 
+.postit.es.rule.big[Notify user] 
 
 ???
 
 - a constraint, eg. _only one item per customer_
 - or something that fork process _apply discount when ..._ 
-
----
-
-## Policy
-
-Reaction that triggers action
-
-.postit.es.policy.big[Notify user] 
 
 ---
 
@@ -69,7 +63,6 @@ User or external service that triggered command
 - .postit.es.event[] Event
 - .postit.es.question[] Question
 - .postit.es.rule[] Rule
-- .postit.es.policy[] Policy
 - .postit.es.command[] Command
 - .postit.es.actor[] Actor
 
@@ -81,25 +74,32 @@ User or external service that triggered command
 
 ## Rule
 
-_thingie_ that we care about
+The _thingie_ that we care about
 
-.postit.bdd.rule.big[Discount only for 40 UAH+] 
+.postit.bdd.rule.big[Discount only for 40+ UAH] 
 
 ---
 
 ## Case
 
-Specific case for _thingie_
+Specific case for the _thingie_
 
-.postit.bdd.case.big[No discount when 39 UAH] 
+.postit.bdd.case.big[No discount for 39 UAH] 
 
 ---
 
 ## Test
 
-### _Given_ `EventA` _and_ `EventB`
-### _When_ `CommandA`
-### _Then_ `EventC` 
+- .test.bdd[_Given_ `EventA` _and_ `EventB`]
+- .test.bdd[_When_ `CommandA`]
+- .test.bdd[_Then_ `EventC`] 
+
+---
+
+- .test.bdd[_Given_ `EventA` _and_ `EventB`]
+- .test.bdd[_When_ `CommandA`]
+- .test.bdd[_Then_ `EventC`] 
+
 
 ---
 
