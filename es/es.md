@@ -76,7 +76,7 @@ A user or a service that causes commands.
 
 The _thing_ that we care about
 
-.postit.bdd.rule.big[All tests mus pass before deployment] 
+.postit.bdd.rule.big[All tests must be green] 
 
 ---
 
@@ -86,7 +86,6 @@ Specific cases for the _thing_
 
 .postit.bdd.case.big[Unit tests failed]
 .postit.bdd.case.big[Unit tests passed]
-.postit.bdd.case.big[Integration tests failed]
 
 ---
 
@@ -95,13 +94,6 @@ Specific cases for the _thing_
 - .test.bdd[_Given_ `UnitTestsPassed` _and_ `IntegrationTestsPassed`]
 - .test.bdd[_When_ `DeployOnStaging`]
 - .test.bdd[_Then_ `DeployedOnStaging`] 
-
----
-
-- .test.bdd[_Given_ `EventA` _and_ `EventB`]
-- .test.bdd[_When_ `CommandA`]
-- .test.bdd[_Then_ `EventC`] 
-
 
 ---
 
