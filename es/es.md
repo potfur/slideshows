@@ -26,15 +26,15 @@ Something _important_ happened
 **Marker** for `¯\_(ツ)_/¯`
 
 .postit.es.question.big[But how?] 
-.postit.es.question.big[Whaaaa!] 
+.postit.es.question.big[When!?] 
 
 ---
 
 ## Rule / Policy
 
-Something that is a business related constraint, reaction, trigger etc. 
+Something that is a business related constraint, condition, that will divide process.
 
-.postit.es.rule.big[Price >= 40 UAH] 
+.postit.es.rule.big[Price >= 40$] 
 .postit.es.rule.big[Notify user] 
 
 ???
@@ -46,7 +46,7 @@ Something that is a business related constraint, reaction, trigger etc.
 
 ## Command
 
-External trigger for action, someone did something.
+A trigger, cause for action, a reason why something happens.
 
 .postit.es.command.big[Create Ad]
  
@@ -54,7 +54,7 @@ External trigger for action, someone did something.
 
 ## Actor
 
-User or external service that triggered command
+A user or a service that causes commands.
 
 .postit.es.actor.big[Buyer] 
 
@@ -74,25 +74,27 @@ User or external service that triggered command
 
 ## Rule
 
-The _thingie_ that we care about
+The _thing_ that we care about
 
-.postit.bdd.rule.big[Discount only for 40+ UAH] 
+.postit.bdd.rule.big[All tests mus pass before deployment] 
 
 ---
 
 ## Case
 
-Specific case for the _thingie_
+Specific cases for the _thing_
 
-.postit.bdd.case.big[No discount for 39 UAH] 
+.postit.bdd.case.big[Unit tests failed]
+.postit.bdd.case.big[Unit tests passed]
+.postit.bdd.case.big[Integration tests failed]
 
 ---
 
 ## Test
 
-- .test.bdd[_Given_ `EventA` _and_ `EventB`]
-- .test.bdd[_When_ `CommandA`]
-- .test.bdd[_Then_ `EventC`] 
+- .test.bdd[_Given_ `UnitTestsPassed` _and_ `IntegrationTestsPassed`]
+- .test.bdd[_When_ `DeployOnStaging`]
+- .test.bdd[_Then_ `DeployedOnStaging`] 
 
 ---
 
