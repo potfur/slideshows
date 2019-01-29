@@ -1,17 +1,15 @@
 @import url('http://fonts.googleapis.com/css?family=Ubuntu+Mono|Arvo|Droid Serif|Source+Sans+Pro:300&subset=latin,latin-ext');
 
-body { font-family: 'Droid Serif', sans-serif; }
+body { font-family: 'Droid Serif', serif; }
 
-h1, h2, h3 , h4 { font: larger/0.8em 'Arvo', sans-serif; margin: 0.5em auto; padding: 0; }
-h1 { font-size: 4em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.25em; font-weight: normal; }
+h1, h2, h3 , h4 { font: 1em/0.8em 'Arvo', sans-serif; margin: 0.5em auto; padding: 0; }
+h4 { font-weight: normal; }
 
-p { line-height: 1.5em }
+li, p { line-height: 1.5em; }
 
 ol, ul { display: inline-block; text-align: left; }
 ol li, ul li { margin: 0.5em 0; }
+ol ul, ol ol, ul ul, ol ul { display: block; }
 
 pre { display: inline-block; font: medium/1.75em 'Ubuntu Mono', monospace; text-align: left; }
 
@@ -19,7 +17,7 @@ code { border-radius: 0.5em; }
 
 .remark-slide-content { padding: 1em !important; }
 
-.dark { background: #222; color: #eee; text-shadow: 0 0 20px #111; }
+.dark { background: #222; color: #ddd; text-shadow: 0 0 20px #111; }
 .dark h1 { color: #e15; }
 .dark h2, .dark h3, .dark h4 { color: #9b1; }
 .dark strong { color: #e15; }
