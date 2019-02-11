@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+ul { margin: 0; }
+ul li { list-style: none; font-size: 1.25em; min-width: 10em;}
+
+h3 { margin: 0.2em 5em; text-align: left; }
+h3 code { margin: 0 0.5em; }
+
+.postit { display: inline-block; width: 2em; height: 2em; margin: 0 0.5em; border: 1px solid transparent; font: 1em/1.2em 'Patrick Hand', cursive, sans-serif; text-shadow: none; box-shadow: rgba(0, 0, 0, 0.2) 0.1em 0.1em; color: #222; }
+.big { width: 4em; height: 4em; font-size: 3em; }
+.test {}
+
+.es.event { background: orange; }
+.es.question { background: orangered; }
+.es.rule { background: blueviolet; }
+.es.command { background: dodgerblue; }
+.es.actor { background: gold; }
+
+.bdd.rule { background: dodgerblue; }
+.bdd.case { background: limegreen; }
+
