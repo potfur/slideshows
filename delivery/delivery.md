@@ -161,6 +161,9 @@ containers involved in UARock, named by function not by technology
 - _+_ CQRS!!!!!111111
 - _+_ Postgres + JSON
 - _+_ Redis -> SQS.FIFO
+- _+_ Tests, tests, tests
+- `-/+` KAAS
+- `-` Lack of INFRA & FE from start
 - `-` API Calls
 - `-` SLA (Objectives + Indicators)
 - `-/+` Laquesis: experiments instead feature flags
